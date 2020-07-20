@@ -1,0 +1,2544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.typekit.net/ndr1psl.css" />
+
+    <title>KODW</title>
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </head>
+
+  <body>
+    <div class="top">
+      <header>
+        <img
+          src="https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/logo-kodw.png"
+          alt=""
+          id="kodw-logo"
+        />
+        <div class="head-middle">
+          <img
+            src="https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/login-title.png"
+            alt=""
+          />
+        </div>
+        <div class="head-right">
+          <img
+            src="https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/logo-event.png"
+            alt=""
+            id="event-logo"
+          />
+          <img
+            src="https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/logo-hkdc.png"
+            alt=""
+            id="hkdc-logo"
+          />
+        </div>
+        <div class="lang-wrapper">
+          <div class="lang-box">
+            <div class="en active">EN</div>
+            <div class="tc">繁</div>
+            <div class="sc">简</div>
+          </div>
+        </div>
+      </header>
+      <div class="content-box">
+        <div class="sign-in">SIGN IN</div>
+        <div class="forgot-pwd-title">FORGOT PASSWORD</div>
+
+        <form id="enrollment-form">
+          <div class="group">
+            <label for="email" id="label-email">Email Address</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="(Please enter your email address)"
+            />
+            <div class="err" id="email-err">
+              Couldn’t find your registration, please register
+              <a href="#" target="_blank">here.</a>
+            </div>
+          </div>
+          <div class="group">
+            <label for="passcode" id="label-password">Password</label>
+            <input
+              type="password"
+              name="passcode"
+              placeholder="(Please enter your password)"
+            />
+            <div class="err" id="pwd-err">* Required Field</div>
+            <div class="forgot-pwd">Forgot Password?</div>
+          </div>
+
+          <div class="group">
+            <label for="location" id="label-location">Streaming Location</label>
+            <div class="location-eng-box">
+              <select id="location-eng">
+                <option value="" disabled selected id="selected"
+                  >(Please select your streaming location)</option
+                >
+                <option value="Hong Kong" id="hk">Hong Kong</option>
+                <option value="" disabled>----------</option>
+                <option value="Afghanistan">Afghanistan</option>
+                <option value="Albania">Albania</option>
+                <option value="Algeria">Algeria</option>
+                <option value="American Samoa">American Samoa</option>
+                <option value="Andorra ">Andorra </option>
+                <option value="Angola">Angola</option>
+                <option value="Anguilla ">Anguilla </option>
+                <option value="Antarctica">Antarctica</option>
+                <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                <option value="Argentina ">Argentina </option>
+                <option value="Armenia ">Armenia </option>
+                <option value="Aruba">Aruba</option>
+                <option value="Australia ">Australia </option>
+                <option value="Austria ">Austria </option>
+                <option value="Azerbaijan">Azerbaijan</option>
+                <option value="Bahamas ">Bahamas </option>
+                <option value="Bahrain ">Bahrain </option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Barbados ">Barbados </option>
+                <option value="Belarus ">Belarus </option>
+                <option value="Belgium ">Belgium </option>
+                <option value="Belize">Belize</option>
+                <option value="Benin">Benin</option>
+                <option value="Bermuda ">Bermuda </option>
+                <option value="Bhutan ">Bhutan </option>
+                <option value="Bolivia, Plurinational State of"
+                  >Bolivia, Plurinational State of</option
+                >
+                <option value="Bonaire, Sint Eustatius and Saba"
+                  >Bonaire, Sint Eustatius and Saba</option
+                >
+                <option value="Bosnia and Herzegovina"
+                  >Bosnia and Herzegovina</option
+                >
+                <option value="Botswana">Botswana</option>
+                <option value="Bouvet Island">Bouvet Island</option>
+                <option value="Brazil">Brazil</option>
+                <option value="British Indian Ocean Territory"
+                  >British Indian Ocean Territory</option
+                >
+                <option value="Brunei Darussalam">Brunei Darussalam</option>
+                <option value="Bulgaria ">Bulgaria </option>
+                <option value="Burkina Faso">Burkina Faso</option>
+                <option value="Burundi ">Burundi </option>
+                <option value="Cambodia">Cambodia</option>
+                <option value="Cameroon">Cameroon</option>
+                <option value="Canada ">Canada </option>
+                <option value="Cape Verde">Cape Verde</option>
+                <option value="Cayman Islands">Cayman Islands</option>
+                <option value="Central African Republic"
+                  >Central African Republic</option
+                >
+                <option value="Chad">Chad</option>
+                <option value="Chile">Chile</option>
+                <option value="China">China</option>
+                <option value="Christmas Island">Christmas Island</option>
+                <option value="Cocos (Keeling) Islands"
+                  >Cocos (Keeling) Islands</option
+                >
+                <option value="Colombia">Colombia</option>
+                <option value="Comoros ">Comoros </option>
+                <option value="Congo">Congo</option>
+                <option value="Congo: The Democratic Republic of the "
+                  >Congo: The Democratic Republic of the
+                </option>
+                <option value="Cook Islands">Cook Islands</option>
+                <option value="Costa Rica">Costa Rica</option>
+                <option value="Croatia ">Croatia </option>
+                <option value="Cuba">Cuba</option>
+                <option value="Curaçao ">Curaçao </option>
+                <option value="Cyprus ">Cyprus </option>
+                <option value="Czech Republic">Czech Republic</option>
+                <option value="Côte d'Ivoire">Côte d'Ivoire</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Djibouti ">Djibouti </option>
+                <option value="Dominica">Dominica</option>
+                <option value="Dominican Republic">Dominican Republic</option>
+                <option value="Ecuador ">Ecuador </option>
+                <option value="Egypt">Egypt</option>
+                <option value="El Salvador">El Salvador</option>
+                <option value="Equatorial Guinea">Equatorial Guinea</option>
+                <option value="Eritrea ">Eritrea </option>
+                <option value="Estonia ">Estonia </option>
+                <option value="Ethiopia ">Ethiopia </option>
+                <option value="Falkland Islands (Malvinas)"
+                  >Falkland Islands (Malvinas)</option
+                >
+                <option value="Faroe Islands">Faroe Islands</option>
+                <option value="Fiji">Fiji</option>
+                <option value="Finland">Finland</option>
+                <option value="France ">France </option>
+                <option value="French Guiana">French Guiana</option>
+                <option value="French Polynesia">French Polynesia</option>
+                <option value="French Southern Territories"
+                  >French Southern Territories</option
+                >
+                <option value="Gabon ">Gabon </option>
+                <option value="Gambia ">Gambia </option>
+                <option value="Georgia ">Georgia </option>
+                <option value="Germany">Germany</option>
+                <option value="Ghana ">Ghana </option>
+                <option value="Gibraltar ">Gibraltar </option>
+                <option value="Greece ">Greece </option>
+                <option value="Greenland">Greenland</option>
+                <option value="Grenada ">Grenada </option>
+                <option value="Guadeloupe">Guadeloupe</option>
+                <option value="Guam ">Guam </option>
+                <option value="Guatemala">Guatemala</option>
+                <option value="Guernsey">Guernsey</option>
+                <option value="Guinea ">Guinea </option>
+                <option value="Guinea-Bissau">Guinea-Bissau</option>
+                <option value="Guyana ">Guyana </option>
+                <option value="Haiti">Haiti</option>
+                <option value="Heard Island and McDonald Islands "
+                  >Heard Island and McDonald Islands
+                </option>
+                <option value="Holy See (Vatican City State) "
+                  >Holy See (Vatican City State)
+                </option>
+                <option value="Honduras">Honduras</option>
+                <option value="Hong Kong">Hong Kong</option>
+                <option value="Hungary ">Hungary </option>
+                <option value="Iceland">Iceland</option>
+                <option value="India">India</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Iran, Islamic Republic of "
+                  >Iran, Islamic Republic of
+                </option>
+                <option value="Iraq">Iraq</option>
+                <option value="Ireland">Ireland</option>
+                <option value="Isle of Man">Isle of Man</option>
+                <option value="Israel">Israel</option>
+                <option value="Italy">Italy</option>
+                <option value="Jamaica">Jamaica</option>
+                <option value="Japan">Japan</option>
+                <option value="Jersey">Jersey</option>
+                <option value="Jordan">Jordan</option>
+                <option value="Kazakhstan">Kazakhstan</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Kiribati">Kiribati</option>
+                <option value="Korea, Democratic People's Republic of"
+                  >Korea, Democratic People's Republic of</option
+                >
+                <option value="Korea, Republic of">Korea, Republic of</option>
+                <option value="Kuwait">Kuwait</option>
+                <option value="Kyrgyzstan">Kyrgyzstan</option>
+                <option value="Lao Peoples Democratic Republic"
+                  >Lao Peoples Democratic Republic</option
+                >
+                <option value="Latvia">Latvia</option>
+                <option value="Lebanon">Lebanon</option>
+                <option value="Lesotho">Lesotho</option>
+                <option value="Liberia">Liberia</option>
+                <option value="Libya">Libya</option>
+                <option value="Liechtenstein">Liechtenstein</option>
+                <option value="Lithuania">Lithuania</option>
+                <option value="Luxembourg">Luxembourg</option>
+                <option value="Macao">Macao</option>
+                <option value="Macedonia, Republic of"
+                  >Macedonia, Republic of</option
+                >
+                <option value="Madagascar">Madagascar</option>
+                <option value="Malawi">Malawi</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Maldives">Maldives</option>
+                <option value="Mali">Mali</option>
+                <option value="Malta">Malta</option>
+                <option value="Marshall Islands">Marshall Islands</option>
+                <option value="Martinique">Martinique</option>
+                <option value="Mauritania">Mauritania</option>
+                <option value="Mauritius">Mauritius</option>
+                <option value="Mayotte ">Mayotte </option>
+                <option value="Mexico">Mexico</option>
+                <option value="Micronesia, Federated States of"
+                  >Micronesia, Federated States of</option
+                >
+                <option value="Moldova, Republic of"
+                  >Moldova, Republic of</option
+                >
+                <option value="Monaco">Monaco</option>
+                <option value="Mongolia ">Mongolia </option>
+                <option value="Montenegro">Montenegro</option>
+                <option value="Montserrat ">Montserrat </option>
+                <option value="Morocco ">Morocco </option>
+                <option value="Mozambique">Mozambique</option>
+                <option value="Myanmar ">Myanmar </option>
+                <option value="Namibia ">Namibia </option>
+                <option value="Nauru">Nauru</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="New Caledonia">New Caledonia</option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="Nicaragua ">Nicaragua </option>
+                <option value="Niger">Niger</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Niue">Niue</option>
+                <option value="Norfolk Island">Norfolk Island</option>
+                <option value="Northern Mariana Islands "
+                  >Northern Mariana Islands
+                </option>
+                <option value="Norway">Norway</option>
+                <option value="Oman">Oman</option>
+                <option value="Pakistan ">Pakistan </option>
+                <option value="Palau">Palau</option>
+                <option value="Palestine, State of "
+                  >Palestine, State of
+                </option>
+                <option value="Panama">Panama</option>
+                <option value="Papua New Guinea ">Papua New Guinea </option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Peru">Peru</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Pitcairn ">Pitcairn </option>
+                <option value="Poland">Poland</option>
+                <option value="Portugal ">Portugal </option>
+                <option value="Puerto Rico">Puerto Rico</option>
+                <option value="Qatar">Qatar</option>
+                <option value="Romania">Romania</option>
+                <option value="Russian Federation ">Russian Federation </option>
+                <option value="Rwanda">Rwanda</option>
+                <option value="Réunion">Réunion</option>
+                <option value="Saint Barthelemy">Saint Barthelemy</option>
+                <option value="Saint Helena, Ascension and Tristan da Cunha "
+                  >Saint Helena, Ascension and Tristan da Cunha
+                </option>
+                <option value="Saint Kitts and Nevis"
+                  >Saint Kitts and Nevis</option
+                >
+                <option value="Saint Lucia">Saint Lucia</option>
+                <option value="Saint Martin (French part)"
+                  >Saint Martin (French part)</option
+                >
+                <option value="Saint Pierre and Miquelon"
+                  >Saint Pierre and Miquelon</option
+                >
+                <option value="Saint Vincent and the Grenadines"
+                  >Saint Vincent and the Grenadines</option
+                >
+                <option value="Samoa">Samoa</option>
+                <option value="San Marino">San Marino</option>
+                <option value="Sao Tome and Principe"
+                  >Sao Tome and Principe</option
+                >
+                <option value="Saudi Arabia">Saudi Arabia</option>
+                <option value="Senegal ">Senegal </option>
+                <option value="Serbia">Serbia</option>
+                <option value="Seychelles">Seychelles</option>
+                <option value="Sierra Leone">Sierra Leone</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Sint Maarten (Dutch part)"
+                  >Sint Maarten (Dutch part)</option
+                >
+                <option value="Slovakia ">Slovakia </option>
+                <option value="Slovenia ">Slovenia </option>
+                <option value="Solomon Islands">Solomon Islands</option>
+                <option value="Somalia ">Somalia </option>
+                <option value="South Africa">South Africa</option>
+                <option value="South Georgia and the South Sandwich Islands "
+                  >South Georgia and the South Sandwich Islands
+                </option>
+                <option value="South Sudan">South Sudan</option>
+                <option value="Spain">Spain</option>
+                <option value="Sri Lanka ">Sri Lanka </option>
+                <option value="Sudan">Sudan</option>
+                <option value="Suriname">Suriname</option>
+                <option value="Svalbard and Jan Mayen"
+                  >Svalbard and Jan Mayen</option
+                >
+                <option value="Swaziland ">Swaziland </option>
+                <option value="Sweden ">Sweden </option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="Syrian Arab Republic"
+                  >Syrian Arab Republic</option
+                >
+                <option value="Taiwan">Taiwan</option>
+                <option value="Tajikistan">Tajikistan</option>
+                <option value="Tanzania, United Republic of"
+                  >Tanzania, United Republic of</option
+                >
+                <option value="Thailand">Thailand</option>
+                <option value="Timor-Leste">Timor-Leste</option>
+                <option value="Togo">Togo</option>
+                <option value="Tokelau ">Tokelau </option>
+                <option value="Tonga">Tonga</option>
+                <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                <option value="Tunisia">Tunisia</option>
+                <option value="Turkey">Turkey</option>
+                <option value="Turkmenistan">Turkmenistan</option>
+                <option value="Turks and Caicos Islands"
+                  >Turks and Caicos Islands</option
+                >
+                <option value="Tuvalu">Tuvalu</option>
+                <option value="Uganda ">Uganda </option>
+                <option value="Ukraine ">Ukraine </option>
+                <option value="United Arab Emirates"
+                  >United Arab Emirates</option
+                >
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="United States">United States</option>
+                <option value="United States Minor Outlying Islands "
+                  >United States Minor Outlying Islands
+                </option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="Uzbekistan">Uzbekistan</option>
+                <option value="Vanuatu">Vanuatu</option>
+                <option value="Venezuela, Bolivarian Republic of "
+                  >Venezuela, Bolivarian Republic of
+                </option>
+                <option value="Viet Nam">Viet Nam</option>
+                <option value="Virgin Islands, British"
+                  >Virgin Islands, British</option
+                >
+                <option value="Virgin Islands, U.S."
+                  >Virgin Islands, U.S.</option
+                >
+                <option value="Wallis and Futuna">Wallis and Futuna</option>
+                <option value="Western Sahara">Western Sahara</option>
+                <option value="Yemen ">Yemen </option>
+                <option value="Zambia ">Zambia </option>
+                <option value="Zimbabwe">Zimbabwe</option>
+                <option value="Âland Islands">Âland Islands</option>
+              </select>
+            </div>
+            <div class="location-tc-box">
+              <select id="location-tc">
+                <option value="" disabled selected id="selected"
+                  >（請選擇您的串流播放地點）</option
+                >
+                <option value="Hong Kong" id="hk">香港</option>
+                <option value="" disabled>----------</option>
+                <option value="Afghanistan">阿富汗</option>
+                <option value="Albania">阿爾巴尼亞</option>
+                <option value="Algeria">阿爾及利亞</option>
+                <option value="American Samoa">美屬薩摩亞</option>
+                <option value="Andorra">安道爾</option>
+                <option value="Angola">安哥拉</option>
+                <option value="Anguilla">安圭拉</option>
+                <option value="Antarctica">南極洲</option>
+                <option value="Antigua and Barbuda">安提瓜和巴布達</option>
+                <option value="Argentina">阿根廷</option>
+                <option value="Armenia">亞美尼亞</option>
+                <option value="Aruba">阿魯巴</option>
+                <option value="Australia">澳大利亞</option>
+                <option value="Austria">奧地利</option>
+                <option value="Azerbaijan">亞塞拜然</option>
+                <option value="Bahamas">巴哈馬</option>
+                <option value="Bahrain">巴林</option>
+                <option value="Bangladesh">孟加拉國</option>
+                <option value="Barbados">巴貝多</option>
+                <option value="Belarus">白俄羅斯</option>
+                <option value="Belgium">比利時</option>
+                <option value="Belize">伯里茲</option>
+                <option value="Benin">貝南</option>
+                <option value="Bermuda">百慕達群島</option>
+                <option value="Bhutan">不丹</option>
+                <option value="Bolivia, Plurinational State of"
+                  >玻利維亞</option
+                >
+                <option value="Bonaire, Sint Eustatius and Saba"
+                  >荷蘭加勒比區</option
+                >
+                <option value="Bosnia and Herzegovina"
+                  >波士尼亞─ 黑塞哥維那</option
+                >
+                <option value="Botswana">波札那</option>
+                <option value="Bouvet Island">布韋島</option>
+                <option value="Brazil">巴西</option>
+                <option value="British Indian Ocean Territory"
+                  >英屬印度洋領地</option
+                >
+                <option value="Brunei Darussalam">汶萊達魯薩蘭國</option>
+                <option value="Bulgaria">保加利亞</option>
+                <option value="Burkina Faso">布吉納法索</option>
+                <option value="Burundi">蒲隆地</option>
+                <option value="Cambodia">柬埔寨</option>
+                <option value="Cameroon">喀麥隆</option>
+                <option value="Canada">加拿大</option>
+                <option value="Cape Verde">佛德角</option>
+                <option value="Cayman Islands">開曼群島</option>
+                <option value="Central African Republic">中非共和國</option>
+                <option value="Chad">查德</option>
+                <option value="Chile">智利</option>
+                <option value="China">中國</option>
+                <option value="Christmas Island">聖誕島</option>
+                <option value="Cocos (Keeling) Islands"
+                  >科科斯(基林)群島</option
+                >
+                <option value="Colombia">哥倫比亞</option>
+                <option value="Comoros">葛摩</option>
+                <option value="Congo">剛果</option>
+                <option value="Congo: The Democratic Republic of the"
+                  >剛果民主共和國</option
+                >
+                <option value="Cook Islands">庫克群島</option>
+                <option value="Costa Rica">哥斯大黎加</option>
+                <option value="Croatia">克羅埃西亞</option>
+                <option value="Cuba">古巴</option>
+                <option value="Curaçao">庫拉索</option>
+                <option value="Cyprus">賽普勒斯</option>
+                <option value="Czech Republic">捷克共和國</option>
+                <option value="Côte d'Ivoire">象牙海岸共和國</option>
+                <option value="Denmark">丹麥</option>
+                <option value="Djibouti">吉布地</option>
+                <option value="Dominica">多米尼克</option>
+                <option value="Dominican Republic">多明尼加共和國</option>
+                <option value="Ecuador">厄瓜多</option>
+                <option value="Egypt">埃及</option>
+                <option value="El Salvador">薩爾瓦多</option>
+                <option value="Equatorial Guinea">赤道幾內亞</option>
+                <option value="Eritrea">厄利垂亞</option>
+                <option value="Estonia">愛沙尼亞</option>
+                <option value="Ethiopia">衣索比亞</option>
+                <option value="Falkland Islands (Malvinas)"
+                  >福克蘭群島(瑪律維納斯)</option
+                >
+                <option value="Faroe Islands">法羅群島</option>
+                <option value="Fiji">斐濟</option>
+                <option value="Finland">芬蘭</option>
+                <option value="France">法國</option>
+                <option value="French Guiana">法屬圭亞那</option>
+                <option value="French Polynesia">法屬波利尼西亞</option>
+                <option value="French Southern Territories"
+                  >法屬南部領地</option
+                >
+                <option value="Gabon">加彭</option>
+                <option value="Gambia">岡比亞</option>
+                <option value="Georgia">格魯吉亞</option>
+                <option value="Germany">德國</option>
+                <option value="Ghana">加納</option>
+                <option value="Gibraltar">直布羅陀</option>
+                <option value="Greece">希臘</option>
+                <option value="Greenland">格陵蘭</option>
+                <option value="Grenada">格林納達</option>
+                <option value="Guadeloupe">瓜德羅普</option>
+                <option value="Guam">關島</option>
+                <option value="Guatemala">瓜地馬拉</option>
+                <option value="Guernsey">根西</option>
+                <option value="Guinea">幾內亞</option>
+                <option value="Guinea-Bissau">幾內亞比索</option>
+                <option value="Guyana">蓋亞那</option>
+                <option value="Haiti">海地</option>
+                <option value="Heard Island and McDonald Islands"
+                  >赫德島和麥克唐納群島</option
+                >
+                <option value="Holy See (Vatican City State)">梵帝岡</option>
+                <option value="Honduras">宏都拉斯</option>
+                <option value="Hong Kong">香港</option>
+                <option value="Hungary">匈牙利</option>
+                <option value="Iceland">冰島</option>
+                <option value="India">印度</option>
+                <option value="Indonesia">印尼, 印尼</option>
+                <option value="Iran, Islamic Republic of"
+                  >伊朗伊斯蘭共和國</option
+                >
+                <option value="Iraq">伊拉克</option>
+                <option value="Ireland">愛爾蘭</option>
+                <option value="Isle of Man">馬恩島</option>
+                <option value="Israel">以色列</option>
+                <option value="Italy">義大利</option>
+                <option value="Jamaica">牙買加</option>
+                <option value="Japan">日本</option>
+                <option value="Jersey">澤西</option>
+                <option value="Jordan">約旦</option>
+                <option value="Kazakhstan">哈薩克</option>
+                <option value="Kenya">肯亞</option>
+                <option value="Kiribati">基裡巴斯</option>
+                <option
+                  value="Korea, Democratic People's Rep.
+                (North Korea)"
+                  >朝鮮</option
+                >
+                <option value="Korea, Republic of (South Korea)"
+                  >大韓民國</option
+                >
+                <option value="Kuwait">科威特</option>
+                <option value="Kyrgyzstan">吉爾吉斯斯坦</option>
+                <option value="Lao Peoples Democratic Republic">老撾</option>
+                <option value="Latvia">拉脫維亞</option>
+                <option value="Lebanon">黎巴嫩</option>
+                <option value="Lesotho">賴索托</option>
+                <option value="Liberia">賴比瑞亞</option>
+                <option value="Libya">利比亞</option>
+                <option value="Liechtenstein">列支敦斯登</option>
+                <option value="Lithuania">立陶宛</option>
+                <option value="Luxembourg">盧森堡</option>
+                <option value="Macao">澳門</option>
+                <option value="Macedonia, Republic of">北馬其頓</option>
+                <option value="Madagascar">馬達加斯加</option>
+                <option value="Malawi">馬拉威</option>
+                <option value="Malaysia">馬來西亞</option>
+                <option value="Maldives">馬爾地夫</option>
+                <option value="Mali">馬里</option>
+                <option value="Malta">馬爾他</option>
+                <option value="Marshall Islands">馬紹爾群島</option>
+                <option value="Martinique">馬丁尼克</option>
+                <option value="Mauritania">茅利塔尼亞</option>
+                <option value="Mauritius">模里西斯</option>
+                <option value="Mayotte">馬約特島</option>
+                <option value="Mexico">墨西哥</option>
+                <option value="Micronesia, Federated States of"
+                  >密克羅尼西亞聯邦</option
+                >
+                <option value="Moldova, Republic of">摩爾多瓦共和國</option>
+                <option value="Monaco">摩納哥</option>
+                <option value="Mongolia">蒙古</option>
+                <option value="Montenegro">黑山</option>
+                <option value="Montserrat">蒙塞拉特島</option>
+                <option value="Morocco">摩洛哥</option>
+                <option value="Mozambique">莫三比克</option>
+                <option value="Myanmar">緬甸</option>
+                <option value="Namibia">納米比亞</option>
+                <option value="Nauru">諾魯</option>
+                <option value="Nepal">尼泊爾</option>
+                <option value="Netherlands">荷蘭</option>
+                <option value="New Caledonia">新喀里多尼亞</option>
+                <option value="New Zealand">紐西蘭</option>
+                <option value="Nicaragua">尼加拉瓜</option>
+                <option value="Niger">尼日爾</option>
+                <option value="Nigeria">奈及利亞</option>
+                <option value="Niue">紐埃</option>
+                <option value="Norfolk Island">諾福克島</option>
+                <option value="Northern Mariana Islands">北馬里亞納群島</option>
+                <option value="Norway">挪威</option>
+                <option value="Oman">阿曼</option>
+                <option value="Pakistan">巴基斯坦</option>
+                <option value="Palau">帕勞</option>
+                <option value="Palestine, State of">巴勒斯坦</option>
+                <option value="Panama">巴拿馬</option>
+                <option value="Papua New Guinea">巴布亞紐幾內亞</option>
+                <option value="Paraguay">巴拉圭</option>
+                <option value="Peru">秘魯</option>
+                <option value="Philippines">菲律賓</option>
+                <option value="Pitcairn">皮特凱恩群島</option>
+                <option value="Poland">波蘭</option>
+                <option value="Portugal">葡萄牙</option>
+                <option value="Puerto Rico">波多黎各</option>
+                <option value="Qatar">卡達</option>
+                <option value="Romania">羅馬尼亞</option>
+                <option value="Russian Federation">俄羅斯聯邦</option>
+                <option value="Rwanda">盧安達</option>
+                <option value="Réunion">留尼旺</option>
+                <option value="Saint Barthelemy">聖巴泰勒米</option>
+                <option value="Saint Helena, Ascension and Tristan da Cunha"
+                  >聖赫勒拿、亞森欣和崔斯坦達庫尼亞</option
+                >
+                <option value="Saint Kitts and Nevis">聖基茨和尼維斯</option>
+                <option value="Saint Lucia">聖露西亞</option>
+                <option value="Saint Martin (French part)">聖馬丁島</option>
+                <option value="Saint Pierre and Miquelon"
+                  >聖皮埃爾和密克隆</option
+                >
+                <option value="Saint Vincent and the Grenadines"
+                  >聖文森特和格林納丁斯</option
+                >
+                <option value="Samoa">薩摩亞</option>
+                <option value="San Marino">聖馬利諾</option>
+                <option value="Sao Tome and Principe">聖多美普林西比</option>
+                <option value="Saudi Arabia">沙烏地阿拉伯</option>
+                <option value="Senegal">塞內加爾</option>
+                <option value="Serbia">塞爾維亞</option>
+                <option value="Seychelles">塞席爾</option>
+                <option value="Sierra Leone">塞拉里昂</option>
+                <option value="Singapore">新加坡</option>
+                <option value="Sint Maarten (Dutch part)">荷屬聖馬丁</option>
+                <option value="Slovakia">斯洛伐克</option>
+                <option value="Slovenia">斯洛維尼亞</option>
+                <option value="Solomon Islands">索羅門群島</option>
+                <option value="Somalia">索馬里</option>
+                <option value="South Africa">南非</option>
+                <option value="South Georgia and the South Sandwich Islands"
+                  >南喬治亞和南桑威奇群島</option
+                >
+                <option value="South Sudan">南蘇丹</option>
+                <option value="Spain">西班牙</option>
+                <option value="Sri Lanka">斯里蘭卡</option>
+                <option value="Sudan">蘇丹</option>
+                <option value="Suriname">蘇利南</option>
+                <option value="Svalbard and Jan Mayen">斯瓦爾巴和揚馬延</option>
+                <option value="Swaziland">史瓦濟蘭</option>
+                <option value="Sweden">瑞典</option>
+                <option value="Switzerland">瑞士</option>
+                <option value="Syrian Arab Republic">敘利亞阿拉伯共和國</option>
+                <option value="Taiwan">臺灣</option>
+                <option value="Tajikistan">塔吉克</option>
+                <option value="Tanzania, United Republic of"
+                  >坦尚尼亞聯合共和國</option
+                >
+                <option value="Thailand">泰國</option>
+                <option value="Timor-Leste">東帝汶</option>
+                <option value="Togo">多哥</option>
+                <option value="Tokelau">托克勞</option>
+                <option value="Tonga">東加</option>
+                <option value="Trinidad and Tobago">特立尼達和多巴哥</option>
+                <option value="Tunisia">突尼西亞</option>
+                <option value="Turkey">土耳其</option>
+                <option value="Turkmenistan">土庫曼</option>
+                <option value="Turks and Caicos Islands"
+                  >特克斯和凱科斯群島</option
+                >
+                <option value="Tuvalu">圖瓦盧</option>
+                <option value="Uganda">烏干達</option>
+                <option value="Ukraine">烏克蘭</option>
+                <option value="United Arab Emirates">阿拉伯聯合大公國</option>
+                <option value="United Kingdom">英國</option>
+                <option value="United States">美國</option>
+                <option value="United States Minor Outlying Islands"
+                  >美國本土外小島嶼</option
+                >
+                <option value="Uruguay">烏拉圭</option>
+                <option value="Uzbekistan">烏茲別克</option>
+                <option value="Vanuatu">瓦努阿圖</option>
+                <option value="Venezuela, Bolivarian Republic of"
+                  >委內瑞拉玻利瓦共和國</option
+                >
+                <option value="Viet Nam">越南</option>
+                <option value="Virgin Islands, British">英屬維爾京群島</option>
+                <option value="Virgin Islands, U.S.">美屬維爾京群島</option>
+                <option value="Wallis and Futuna">瓦利斯和富圖納</option>
+                <option value="Western Sahara">西撒哈拉</option>
+                <option value="Yemen">葉門</option>
+                <option value="Zambia">尚比亞</option>
+                <option value="Zimbabwe">辛巴威</option>
+                <option value="Âland Islands">奧蘭</option>
+              </select>
+            </div>
+            <div class="location-sc-box">
+              <select id="location-sc">
+                <option value="" disabled selected id="selected"
+                  >（请选择您的串流播放地点）</option
+                >
+                <option value="Hong Kong" id="hk">香港</option>
+                <option value="" disabled>----------</option>
+                <option value="Afghanistan">阿富汗</option>
+                <option value="Albania">阿尔巴尼亚</option>
+                <option value="Algeria">阿尔及利亚</option>
+                <option value="American Samoa">美屬薩摩亞</option>
+                <option value="Andorra">安道尔</option>
+                <option value="Angola">安哥拉</option>
+                <option value="Anguilla">安圭拉</option>
+                <option value="Antarctica">南极洲</option>
+                <option value="Antigua and Barbuda">安提瓜和巴布达</option>
+                <option value="Argentina">阿根廷</option>
+                <option value="Armenia">亚美尼亚</option>
+                <option value="Aruba">阿鲁巴</option>
+                <option value="Australia">澳大利亚</option>
+                <option value="Austria">奥地利</option>
+                <option value="Azerbaijan">阿塞拜疆</option>
+                <option value="Bahamas">巴哈马</option>
+                <option value="Bahrain">巴林</option>
+                <option value="Bangladesh">孟加拉国</option>
+                <option value="Barbados">巴巴多斯</option>
+                <option value="Belarus">白俄罗斯</option>
+                <option value="Belgium">比利时</option>
+                <option value="Belize">伯利兹</option>
+                <option value="Benin">贝宁</option>
+                <option value="Bermuda">百慕达群岛</option>
+                <option value="Bhutan">不丹</option>
+                <option value="Bolivia, Plurinational State of"
+                  >玻利维亚</option
+                >
+                <option value="Bonaire, Sint Eustatius and Saba"
+                  >荷兰加勒比区</option
+                >
+                <option value="Bosnia and Herzegovina"
+                  >波斯尼亚 - 黑塞哥维那</option
+                >
+                <option value="Botswana">博茨瓦纳</option>
+                <option value="Bouvet Island">布韦岛</option>
+                <option value="Brazil">巴西</option>
+                <option value="British Indian Ocean Territory"
+                  >英属印度洋领地</option
+                >
+                <option value="Brunei Darussalam">文莱达鲁萨兰国</option>
+                <option value="Bulgaria">保加利亚</option>
+                <option value="Burkina Faso">布基纳法索</option>
+                <option value="Burundi">蒲隆地</option>
+                <option value="Cambodia">柬埔寨</option>
+                <option value="Cameroon">喀麦隆</option>
+                <option value="Canada">加拿大</option>
+                <option value="Cape Verde">佛得角</option>
+                <option value="Cayman Islands">开曼群岛</option>
+                <option value="Central African Republic">中非共和国</option>
+                <option value="Chad">乍得</option>
+                <option value="Chile">智利</option>
+                <option value="China">中国</option>
+                <option value="Christmas Island">聖誕島</option>
+                <option value="Cocos (Keeling) Islands"
+                  >科科斯（基林）群岛</option
+                >
+                <option value="Colombia">哥伦比亚</option>
+                <option value="Comoros">葛摩</option>
+                <option value="Congo">刚果</option>
+                <option value="Congo: The Democratic Republic of the"
+                  >刚果民主共和国</option
+                >
+                <option value="Cook Islands">库克群岛</option>
+                <option value="Costa Rica">哥斯达黎加</option>
+                <option value="Croatia">克罗地亚</option>
+                <option value="Cuba">古巴</option>
+                <option value="Curaçao">庫拉索</option>
+                <option value="Cyprus">塞浦路斯</option>
+                <option value="Czech Republic">捷克共和国</option>
+                <option value="Côte d'Ivoire">象牙海岸共和國</option>
+                <option value="Denmark">丹麦</option>
+                <option value="Djibouti">吉布提</option>
+                <option value="Dominica">多米尼克</option>
+                <option value="Dominican Republic">多米尼加共和国</option>
+                <option value="Ecuador">厄瓜多尔</option>
+                <option value="Egypt">埃及</option>
+                <option value="El Salvador">萨尔瓦多</option>
+                <option value="Equatorial Guinea">赤道几内亚</option>
+                <option value="Eritrea">厄立特里亚</option>
+                <option value="Estonia">爱沙尼亚</option>
+                <option value="Ethiopia">埃塞俄比亚</option>
+                <option value="Falkland Islands (Malvinas)"
+                  >福克兰群岛（马尔维纳斯）</option
+                >
+                <option value="Faroe Islands">法罗群岛</option>
+                <option value="Fiji">斐济</option>
+                <option value="Finland">芬兰</option>
+                <option value="France">法国</option>
+                <option value="French Guiana">法屬圭亞那</option>
+                <option value="French Polynesia">法属波利尼西亚</option>
+                <option value="French Southern Territories"
+                  >法属南部领地</option
+                >
+                <option value="Gabon">加蓬</option>
+                <option value="Gambia">冈比亚</option>
+                <option value="Georgia">格鲁吉亚</option>
+                <option value="Germany">德国</option>
+                <option value="Ghana">加纳</option>
+                <option value="Gibraltar">直布罗陀</option>
+                <option value="Greece">希腊</option>
+                <option value="Greenland">格陵兰</option>
+                <option value="Grenada">格林纳达</option>
+                <option value="Guadeloupe">瓜德罗普</option>
+                <option value="Guam">关岛</option>
+                <option value="Guatemala">危地马拉</option>
+                <option value="Guernsey">根西</option>
+                <option value="Guinea">几内亚</option>
+                <option value="Guinea-Bissau">幾內亞比索</option>
+                <option value="Guyana">圭亚那</option>
+                <option value="Haiti">海地</option>
+                <option value="Heard Island and McDonald Islands"
+                  >赫德岛和麦克唐纳群岛</option
+                >
+                <option value="Holy See (Vatican City State)">梵帝冈</option>
+                <option value="Honduras">洪都拉斯</option>
+                <option value="Hong Kong">香港</option>
+                <option value="Hungary">匈牙利</option>
+                <option value="Iceland">冰岛</option>
+                <option value="India">印度</option>
+                <option value="Indonesia">印度尼西亚, 印尼</option>
+                <option value="Iran, Islamic Republic of"
+                  >伊朗伊斯兰共和国</option
+                >
+                <option value="Iraq">伊拉克</option>
+                <option value="Ireland">爱尔兰</option>
+                <option value="Isle of Man">马恩岛</option>
+                <option value="Israel">以色列</option>
+                <option value="Italy">意大利</option>
+                <option value="Jamaica">牙买加</option>
+                <option value="Japan">日本</option>
+                <option value="Jersey">泽西</option>
+                <option value="Jordan">约旦</option>
+                <option value="Kazakhstan">哈萨克斯坦</option>
+                <option value="Kenya">肯尼亚</option>
+                <option value="Kiribati">基里巴斯</option>
+                <option value="Korea, Democratic People's Rep. (North Korea)"
+                  >朝鮮</option
+                >
+                <option value="Korea, Republic of (South Korea)"
+                  >大韩民国</option
+                >
+                <option value="Kuwait">科威特</option>
+                <option value="Kyrgyzstan">吉尔吉斯斯坦</option>
+                <option value="Lao Peoples Democratic Republic">老挝</option>
+                <option value="Latvia">拉脱维亚</option>
+                <option value="Lebanon">黎巴嫩</option>
+                <option value="Lesotho">莱索托</option>
+                <option value="Liberia">利比里亚</option>
+                <option value="Libya">利比亚</option>
+                <option value="Liechtenstein">列支敦士登</option>
+                <option value="Lithuania">立陶宛</option>
+                <option value="Luxembourg">卢森堡</option>
+                <option value="Macao">澳门</option>
+                <option value="Macedonia, Republic of">北馬其頓</option>
+                <option value="Madagascar">马达加斯加</option>
+                <option value="Malawi">马拉维</option>
+                <option value="Malaysia">马来西亚</option>
+                <option value="Maldives">马尔代夫</option>
+                <option value="Mali">马里</option>
+                <option value="Malta">马耳他</option>
+                <option value="Marshall Islands">马绍尔群岛</option>
+                <option value="Martinique">马提尼克</option>
+                <option value="Mauritania">毛里塔尼亚</option>
+                <option value="Mauritius">毛里求斯</option>
+                <option value="Mayotte">马约特岛</option>
+                <option value="Mexico">墨西哥</option>
+                <option value="Micronesia, Federated States of"
+                  >密克罗尼西亚联邦</option
+                >
+                <option value="Moldova, Republic of">摩尔多瓦共和国</option>
+                <option value="Monaco">摩纳哥</option>
+                <option value="Mongolia">蒙古</option>
+                <option value="Montenegro">黑山</option>
+                <option value="Montserrat">蒙塞拉特島</option>
+                <option value="Morocco">摩洛哥</option>
+                <option value="Mozambique">莫桑比克</option>
+                <option value="Myanmar">缅甸</option>
+                <option value="Namibia">纳米比亚</option>
+                <option value="Nauru">瑙鲁</option>
+                <option value="Nepal">尼泊尔</option>
+                <option value="Netherlands">荷兰</option>
+                <option value="New Caledonia">新喀里多尼亚</option>
+                <option value="New Zealand">新西兰</option>
+                <option value="Nicaragua">尼加拉瓜</option>
+                <option value="Niger">尼日尔</option>
+                <option value="Nigeria">尼日利亚</option>
+                <option value="Niue">紐埃</option>
+                <option value="Norfolk Island">诺福克岛</option>
+                <option value="Northern Mariana Islands">北马里亚纳群岛</option>
+                <option value="Norway">挪威</option>
+                <option value="Oman">阿曼</option>
+                <option value="Pakistan">巴基斯坦</option>
+                <option value="Palau">帕劳</option>
+                <option value="Palestine, State of">巴勒斯坦</option>
+                <option value="Panama">巴拿马</option>
+                <option value="Papua New Guinea">巴布亚新几内亚</option>
+                <option value="Paraguay">巴拉圭</option>
+                <option value="Peru">秘鲁</option>
+                <option value="Philippines">菲律宾</option>
+                <option value="Pitcairn">皮特凯恩群岛</option>
+                <option value="Poland">波兰</option>
+                <option value="Portugal">葡萄牙</option>
+                <option value="Puerto Rico">波多黎各</option>
+                <option value="Qatar">卡塔尔</option>
+                <option value="Romania">罗马尼亚</option>
+                <option value="Russian Federation">俄罗斯联邦</option>
+                <option value="Rwanda">卢旺达</option>
+                <option value="Réunion">留尼汪</option>
+                <option value="Saint Barthelemy">圣巴泰勒米</option>
+                <option value="Saint Helena, Ascension and Tristan da Cunha"
+                  >圣赫勒拿、亚森欣和崔斯坦达库尼亚</option
+                >
+                <option value="Saint Kitts and Nevis">圣基茨和尼维斯</option>
+                <option value="Saint Lucia">圣卢西亚</option>
+                <option value="Saint Martin (French part)">圣马丁岛</option>
+                <option value="Saint Pierre and Miquelon"
+                  >圣皮埃尔和密克隆</option
+                >
+                <option value="Saint Vincent and the Grenadines"
+                  >圣文森特和格林纳丁斯</option
+                >
+                <option value="Samoa">萨摩亚</option>
+                <option value="San Marino">圣马力诺</option>
+                <option value="Sao Tome and Principe">圣多美普林西比</option>
+                <option value="Saudi Arabia">沙特阿拉伯</option>
+                <option value="Senegal">塞内加尔</option>
+                <option value="Serbia">塞尔维亚</option>
+                <option value="Seychelles">塞舌尔</option>
+                <option value="Sierra Leone">塞拉利昂</option>
+                <option value="Singapore">新加坡</option>
+                <option value="Sint Maarten (Dutch part)">荷属圣马丁</option>
+                <option value="Slovakia">斯洛伐克</option>
+                <option value="Slovenia">斯洛文尼亚</option>
+                <option value="Solomon Islands">所罗门群岛</option>
+                <option value="Somalia">索马里</option>
+                <option value="South Africa">南非</option>
+                <option value="South Georgia and the South Sandwich Islands"
+                  >南乔治亚和南桑威奇群岛</option
+                >
+                <option value="South Sudan">南苏丹</option>
+                <option value="Spain">西班牙</option>
+                <option value="Sri Lanka">斯里兰卡</option>
+                <option value="Sudan">苏丹</option>
+                <option value="Suriname">苏里南</option>
+                <option value="Svalbard and Jan Mayen">斯瓦尔巴和扬马延</option>
+                <option value="Swaziland">史瓦济兰</option>
+                <option value="Sweden">瑞典</option>
+                <option value="Switzerland">瑞士</option>
+                <option value="Syrian Arab Republic">叙利亚阿拉伯共和国</option>
+                <option value="Taiwan">台湾</option>
+                <option value="Tajikistan">塔吉克斯坦</option>
+                <option value="Tanzania, United Republic of"
+                  >坦桑尼亚联合共和国</option
+                >
+                <option value="Thailand">泰国</option>
+                <option value="Timor-Leste">东帝汶</option>
+                <option value="Togo">多哥</option>
+                <option value="Tokelau">托克劳</option>
+                <option value="Tonga">東加</option>
+                <option value="Trinidad and Tobago">特立尼达和多巴哥</option>
+                <option value="Tunisia">突尼斯</option>
+                <option value="Turkey">土耳其</option>
+                <option value="Turkmenistan">土库曼</option>
+                <option value="Turks and Caicos Islands"
+                  >特克斯和凯科斯群岛</option
+                >
+                <option value="Tuvalu">圖瓦盧</option>
+                <option value="Uganda">乌干达</option>
+                <option value="Ukraine">乌克兰</option>
+                <option value="United Arab Emirates">阿拉伯联合酋长国</option>
+                <option value="United Kingdom">英国</option>
+                <option value="United States">美国</option>
+                <option value="United States Minor Outlying Islands"
+                  >美国本土外小岛屿</option
+                >
+                <option value="Uruguay">乌拉圭</option>
+                <option value="Uzbekistan">乌兹别克斯坦</option>
+                <option value="Vanuatu">瓦努阿图</option>
+                <option value="Venezuela, Bolivarian Republic of"
+                  >委内瑞拉玻利瓦共和国</option
+                >
+                <option value="Viet Nam">越南</option>
+                <option value="Virgin Islands, British">英属维尔京群岛</option>
+                <option value="Virgin Islands, U.S.">美属维尔京群岛</option>
+                <option value="Wallis and Futuna">瓦利斯和富图纳</option>
+                <option value="Western Sahara">西撒哈拉</option>
+                <option value="Yemen">也门</option>
+                <option value="Zambia">赞比亚</option>
+                <option value="Zimbabwe">津巴布韦</option>
+                <option value="Âland Islands">奥兰</option>
+              </select>
+            </div>
+          </div>
+          <div class="failed-login">
+            The login information you entered was incorrect. Please try to
+            re-enter your email address and password. Please try again.
+          </div>
+          <div class="submit-box">
+            <button type="submit" id="submit" disabled>
+              <img
+                src="https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/submit.png"
+                alt=""
+                id="mobile-submit-lg"
+              />
+              <img
+                src="https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/submit-mobile-btn.png"
+                alt=""
+                id="mobile-submit-btn"
+              />
+            </button>
+          </div>
+        </form>
+        <form id="forgot-pwd-form">
+          <div class="group">
+            <label for="email" id="label-forgot-email">Email Address</label>
+            <input
+              type="email"
+              name="email"
+              id="forgot-email"
+              required
+              placeholder="(Please enter your email address)"
+            />
+            <div id="forgot-pwd-err">
+              Please check your email for the password
+            </div>
+          </div>
+          <div class="ok-box">
+            <button class="confirm" id="submit">
+              <div class="loader"></div>
+              <img
+                src="https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/submit.png"
+                alt=""
+                id="fg-mobile-submit-lg"
+              />
+              <img
+                src="https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/submit-mobile-btn.png"
+                alt=""
+                id="fg-mobile-submit-btn"
+              />
+            </button>
+          </div>
+          <div class="back-to-sign-in">Back to SIGN IN</div>
+        </form>
+        <div class="registration-box">
+          Haven't registered yet?
+          <a
+            href="https://novacast.nova.hk/events/kodw2020/registration"
+            target="_blank"
+            >Register here.</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="social-media-box">
+      <div class="social-inner-box">
+        <div class="fb">
+          <a href="https://www.facebook.com/kodwhkdc" target="_blank"
+            ><img
+              src="https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/fb.png"
+              alt=""
+              id="fb"
+          /></a>
+        </div>
+        <div class="twitter">
+          <a href="https://twitter.com/kodw_hkdc" target="_blank">
+            <img
+              src="https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/twitter.png"
+              alt=""
+              id="twitter"
+          /></a>
+        </div>
+        <div class="insta">
+          <a href="https://www.instagram.com/kodw_hkdc" target="_blank">
+            <img
+              src="https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/insta.png"
+              alt=""
+              id="insta"
+          /></a>
+        </div>
+        <div class="linkedin">
+          <a
+            href="https://www.linkedin.com/company/knowledge-of-design-week"
+            target="_blank"
+          >
+            <img
+              src="https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/linkedin.png"
+              alt=""
+              id="linkedin"
+          /></a>
+        </div>
+        <div class="yt">
+          <a
+            href="https://www.youtube.com/channel/UCB9QTGZRIJyjEwIrBh09uZw"
+            target="_blank"
+          >
+            <img
+              src="https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/yt.png"
+              alt=""
+              id="yt"
+          /></a>
+        </div>
+        <div class="weibo">
+          <a href="https://www.weibo.com/kodwhkdc?is_all=1" target="_blank">
+            <img
+              src="https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/weibo.png"
+              alt=""
+              id="weibo"
+          /></a>
+        </div>
+        <div class="wechat">
+          <a href="https://www.kodw.org/en" target="_blank">
+            <img
+              src="https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/wechat.png"
+              alt=""
+              id="wechat"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="inner-footer">
+        <div class="institute-box">
+          <div class="organiser">
+            <div class="in-label">ORGANISER</div>
+            <div class="institute">
+              <div class="org-box">
+                <a
+                  href="https://www.hkdesigncentre.org/"
+                  target="_blank"
+                  id="hkdc-a"
+                >
+                  <img
+                    src="https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/hkdc.png"
+                    alt=""
+                  />
+                </a>
+                <a href="https://www.idk-hkdc.org/" target="_blank" id="idk-a">
+                  <img
+                    src="https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/idk.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <!-- <img src="https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/hkdc.png" alt="" /> -->
+            </div>
+          </div>
+          <div class="co-organiser">
+            <div class="in-label">CO-ORGANISERS</div>
+            <div class="institute">
+              <a
+                href="http://www.hkdi.edu.hk/en/"
+                target="_blank"
+                class="hkdi-a"
+              >
+                <img
+                  src="https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/hkdi.png"
+                  alt=""
+                  id="hkdi-logo"
+                />
+              </a>
+              <a
+                href="https://www.sd.polyu.edu.hk/en/"
+                target="_blank"
+                id="poly-U"
+              >
+                <img
+                  src="https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/poly.png"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+          <div class="lead-sponsor">
+            <div class="in-label">LEAD SPONSOR</div>
+            <div class="institute">
+              <a href="https://www.createhk.gov.hk/" target="_blank">
+                <img
+                  src="https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/createhk.png"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="disclaimer">
+          Disclaimer: The Government of the Hong Kong Special Administrative
+          Region provides funding support to the project only, and does not
+          otherwise take part in the project. Any opinions, findings,
+          conclusions or recommendations expressed in these materials/events (or
+          by members of the project team) are those of the project organizers
+          only and do not reflect the views of the Government of the Hong Kong
+          Special Administrative Region, the Communications and Creative
+          Industries Branch of the Commerce and Economic Development Bureau,
+          Create Hong Kong, the CreateSmart Initiative Secretariat or the
+          CreateSmart Initiative Vetting Committee.
+        </div>
+      </div>
+    </footer>
+
+    <div class="result">Please check your email for the PIN.</div>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "futura-pt", "Roboto";
+        color: #fff;
+      }
+      /* .top {
+          background-image: url(https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/fill-lg.png);
+          background-size: cover;
+          background-position: right;
+        } */
+
+      #mobile-submit-btn {
+        display: none;
+      }
+
+      #fg-mobile-submit-btn {
+        display: none;
+      }
+
+      .result {
+        position: fixed;
+        right: -600px;
+        top: 100px;
+        background-color: rgb(67, 181, 226);
+        color: #fff;
+        font-size: 16px;
+        font-weight: 300;
+        padding: 10px 20px;
+        border-top-left-radius: 10px;
+        transition: right 2s;
+        z-index: 999999;
+      }
+
+      #kodw-logo {
+        width: 193px;
+      }
+
+      #event-logo {
+        width: 150px;
+      }
+
+      #hkdc-logo {
+        width: 70px;
+        margin-left: 25px;
+      }
+
+      #poly-U {
+        margin-top: -16px;
+      }
+
+      .head-middle {
+        position: absolute;
+        width: calc(100% - 80px);
+        width: 100%;
+        text-align: center;
+        top: 22px;
+      }
+
+      .head-middle > img {
+        width: 506px;
+      }
+
+      .location-tc-box,
+      .location-sc-box {
+        display: none;
+      }
+
+      .head-right {
+        display: flex;
+        align-items: flex-start;
+      }
+
+      .content-box {
+        padding-top: 25px;
+        background-image: url(https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/bg-main.png);
+        background-size: cover;
+        background-position: left;
+      }
+
+      header {
+        position: relative;
+        padding: 24px 40px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        height: 300px;
+        background-image: url(./images/xl-banner-login.jpg);
+        background-size: cover;
+        background-position: right;
+      }
+
+      .lang-box {
+        position: relative;
+        height: 30px;
+      }
+
+      .org-box {
+        width: 74%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+
+      .lang-box div {
+        letter-spacing: -0.07px;
+        color: #fff;
+        font-size: 18px;
+
+        display: none;
+        cursor: pointer;
+        margin-bottom: 5px;
+      }
+
+      .lang-box .active {
+        border-bottom: 2px solid #fff;
+        text-shadow: 0px 0px 1px;
+        display: block;
+        color: #fff;
+        line-height: 1.2;
+      }
+
+      .show {
+        display: block !important;
+      }
+
+      .lang-box::after {
+        content: "";
+        width: 1px;
+        height: 5px;
+        border-top: 7px solid #fff;
+        border-left: 5px transparent solid;
+        border-right: 5px solid transparent;
+        position: absolute;
+        right: -15px;
+        top: 10px;
+        display: block;
+      }
+
+      .lang-wrapper {
+        position: absolute;
+        right: 75px;
+        bottom: 60px;
+        display: flex;
+        align-items: center;
+      }
+
+      #title-logo {
+        width: 900px;
+      }
+
+      .title-box {
+        text-align: center;
+      }
+
+      .sign-in {
+        font-size: 30px;
+        text-align: center;
+        font-weight: 600;
+        letter-spacing: 0px;
+      }
+
+      .forgot-pwd-title {
+        font-size: 30px;
+        text-align: center;
+        font-weight: 600;
+        letter-spacing: 0px;
+        display: none;
+      }
+
+      #enrollment-form {
+        width: 560px;
+        margin: auto;
+        margin-top: 20px;
+      }
+
+      #forgot-pwd-form {
+        display: none;
+        width: 560px;
+        margin: auto;
+        margin-top: 20px;
+        padding: 40px 0;
+      }
+
+      .group {
+        margin-bottom: 30px;
+        position: relative;
+      }
+
+      label {
+        font-size: 20px;
+        font-weight: 300;
+        color: #fff;
+      }
+
+      input {
+        width: 100%;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #fff;
+        height: 40px;
+        margin-top: 5px;
+        color: #fff;
+        font-size: 18px;
+        font-family: "futura-pt", "Roboto";
+        font-weight: 300;
+      }
+
+      input::placeholder {
+        font-size: 15px;
+        color: rgb(190, 190, 190);
+      }
+
+      .select-wrapper input.select-dropdown {
+        color: rgb(190, 190, 190);
+      }
+
+      input:focus {
+        outline: none;
+      }
+
+      .failed-login {
+        color: rgb(247, 122, 122);
+        line-height: 1.2;
+        display: none;
+      }
+
+      select {
+        width: 100%;
+        height: 40px;
+        margin-top: 5px;
+        background: transparent;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 300;
+        border: none;
+        border-bottom: 1px solid #fff;
+        font-family: "futura-pt", "Roboto";
+      }
+
+      .dropdown-content li > a,
+      .dropdown-content li > span {
+        font-size: 16px;
+        color: #000;
+        display: block;
+        line-height: 22px;
+        padding: 14px 16px;
+      }
+
+      .select-wrapper .caret {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        z-index: 0;
+        fill: #fff;
+      }
+
+      select:focus {
+        outline: none;
+      }
+
+      button#submit {
+        background: transparent;
+        border: none;
+        width: 240px;
+        cursor: pointer;
+        position: relative;
+      }
+
+      #submit:focus {
+        outline: none;
+        border: none;
+      }
+
+      #sumbit:active {
+        outline: none;
+        border: none;
+      }
+
+      .back-to-sign-in {
+        text-align: center;
+        margin-top: 20px;
+        text-decoration: underline;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 300;
+        color: #b6b6b6;
+      }
+
+      button#submit:disabled {
+        cursor: not-allowed;
+      }
+
+      .submit-box {
+        text-align: center;
+        margin-top: 60px;
+      }
+
+      #submit > img {
+        width: 100%;
+      }
+
+      .registration-box {
+        margin-top: 30px;
+        font-size: 20px;
+        font-weight: 300;
+        text-align: center;
+        padding-bottom: 55px;
+      }
+
+      .registration-box > a {
+        color: #fff;
+        text-decoration: underline;
+      }
+
+      .social-media-box {
+        background-color: #390658;
+      }
+
+      .social-inner-box {
+        display: flex;
+        max-width: 900px;
+        margin: auto;
+        height: 80px;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .social-inner-box > div > a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .social-inner-box img {
+        max-width: 32px;
+        max-height: 32px;
+        cursor: pointer;
+      }
+
+      footer {
+        background-image: url(https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/footer-bg-lg.jpg);
+        background-size: cover;
+        padding: 43px 0 70px;
+      }
+
+      .inner-footer {
+        max-width: 1280px;
+        margin: auto;
+      }
+
+      .institute-box {
+        display: flex;
+      }
+
+      .organiser {
+        width: 36%;
+      }
+
+      .organiser img {
+        width: 100%;
+      }
+
+      .co-organiser {
+        width: 44%;
+      }
+
+      .in-label {
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 15px;
+      }
+
+      .lead-sponsor > .in-label {
+        margin-left: 30px;
+      }
+
+      .institute {
+        height: 70%;
+        display: flex;
+        align-items: center;
+      }
+
+      .institute > a {
+        width: 36%;
+      }
+
+      .institute .hkdi-a {
+        margin-right: 18%;
+      }
+
+      .co-organiser .institute {
+        display: flex;
+        align-items: center;
+      }
+
+      .co-organiser img {
+        width: 100%;
+      }
+
+      .lead-sponsor {
+        width: 20%;
+      }
+
+      .lead-sponsor a {
+        width: 73%;
+      }
+
+      #hkdi-logo {
+        width: 100%;
+      }
+
+      .lead-sponsor .institute {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .lead-sponsor img {
+        width: 100%;
+      }
+
+      .disclaimer {
+        font-size: 12px;
+        font-weight: 300;
+        margin-top: 25px;
+      }
+
+      .err {
+        color: #e22c2ce8;
+        position: absolute;
+        right: 20px;
+        bottom: 10px;
+        font-size: 14px;
+        display: none;
+      }
+
+      .forgot-pwd {
+        color: #b6b6b6;
+        font-size: 16px;
+        position: absolute;
+        right: 0;
+        text-decoration: underline;
+        bottom: -30px;
+        cursor: pointer;
+      }
+
+      #forgot-pwd-err {
+        display: none;
+      }
+      /* forgot pwd modal */
+
+      .loader {
+        border: 2px solid #f3f3f3;
+        /* Light grey */
+        border-top: 2px solid #3498db;
+        /* Blue */
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        animation: spin 2s linear infinite;
+        display: none;
+        position: absolute;
+        right: 30px;
+        top: 12px;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .wrapper {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .box {
+        width: 250px;
+        background: #fff;
+        border-radius: 3px;
+        padding: 15px;
+        position: relative;
+      }
+
+      .head {
+        color: #000;
+        font-size: 1.2em;
+        text-align: center;
+      }
+      /* input#forgot-email {
+          width: 100%;
+          margin: 10px 0;
+          height: 30px;
+          color: #000;
+          border-bottom: 1px solid #000;
+          font-size: 1em;
+          font-weight: 300;
+          text-align: center;
+        } */
+
+      .ok-box {
+        text-align: center;
+      }
+
+      .confirm {
+        background-color: transparent;
+        color: #fff;
+        font-size: 12px;
+        padding: 5px 20px;
+        border: none;
+        border-radius: 3px;
+      }
+
+      .confirm:focus {
+        outline: none;
+      }
+
+      .close {
+        position: absolute;
+        color: #fff;
+        right: -15px;
+        top: -20px;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      /* end */
+
+      @media only screen and (max-width: 1440px) {
+        .inner-footer {
+          max-width: 1228px;
+        }
+        header {
+          background-image: url(./images/lg-banner-login.jpg);
+          background-size: cover;
+        }
+      }
+
+      @media only screen and (max-width: 1280px) {
+        .inner-footer {
+          padding: 0 50px;
+        }
+        .head-middle > img {
+          width: 500px;
+        }
+      }
+
+      @media only screen and (max-width: 1200px) {
+        .head-middle > img {
+          width: 450px;
+        }
+      }
+
+      @media only screen and (max-width: 1024px) {
+        header {
+          background-image: url(./images/ipad-banner-login.jpg);
+          background-size: cover;
+          padding: 18px 17px;
+          height: 200px;
+        }
+        .lang-wrapper {
+          right: 50px;
+          bottom: 40px;
+        }
+        .lang-box div {
+          font-size: 20px;
+        }
+        .lang-box {
+          height: 20px;
+        }
+        .head-middle > img {
+          width: 331px;
+        }
+        .head-middle {
+          top: 17px;
+          width: calc(100% - 34px);
+        }
+        .social-inner-box {
+          max-width: 714px;
+          height: 60px;
+        }
+        #kodw-logo {
+          width: 136px;
+        }
+        #event-logo {
+          width: 106px;
+        }
+        #hkdc-logo {
+          width: 63px;
+        }
+        #title-logo {
+          width: 600px;
+        }
+        .submit-box {
+          margin-top: 37px;
+        }
+        .sign-in {
+          font-size: 24px;
+        }
+        .forgot-pwd-title {
+          font-size: 24px;
+        }
+        #enrollment-form,
+        #forgot-pwd-form {
+          margin-top: 27px;
+          width: 393px;
+        }
+        #poly-U {
+          margin-top: -10px;
+        }
+        label {
+          font-size: 18px;
+        }
+        input {
+          height: 40px;
+          font-size: 1em;
+        }
+        select {
+          height: 40px;
+          font-size: 1em;
+        }
+        .group {
+          margin-bottom: 22px;
+        }
+        button#submit {
+          width: 250px;
+        }
+        .registration-box {
+          font-size: 18px;
+          padding-bottom: 40px;
+        }
+        footer {
+          padding: 22px 0 50px;
+        }
+      }
+
+      @media only screen and (max-width: 768px) {
+        .head-middle {
+          top: 20px;
+        }
+        .head-middle > img {
+          width: 300px;
+        }
+      }
+
+      @media only screen and (max-width: 600px) {
+        /* .top {
+            background-image: url(https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/fill-mobile.png);
+            background-position: top;
+          } */
+        #enrollment-form {
+          width: 80%;
+          margin: 12px auto;
+        }
+        #forgot-pwd-form {
+          width: 80%;
+        }
+        #kodw-logo {
+          width: 82px;
+        }
+        #event-logo {
+          width: 66px;
+        }
+        #hkdc-logo {
+          width: 30px;
+          margin-left: 18px;
+        }
+        header {
+          background-image: url(./images/mobile-banner-login.jpg);
+          height: 160px;
+          padding: 10px;
+        }
+        .lang-wrapper {
+          right: 25px;
+          bottom: 16px;
+        }
+        .lang-box {
+          height: 18px;
+        }
+        .lang-box::after {
+          top: 7px;
+        }
+        .lang-box div {
+          font-size: 14px;
+        }
+        .head-middle {
+          width: calc(100% - 20px);
+          top: 46px;
+        }
+        .head-middle > img {
+          width: 213px;
+        }
+        #title-logo {
+          width: 320px;
+        }
+        .sign-in,
+        .forgot-pwd-title {
+          font-size: 20px;
+        }
+        label {
+          font-size: 16px;
+        }
+        .forgot-pwd {
+          font-size: 12px;
+          bottom: -20px;
+        }
+        .group {
+          margin-bottom: 15px;
+        }
+        input {
+          margin-top: 10px;
+        }
+        button#submit {
+          width: 220px;
+        }
+        .submit-box {
+          margin-top: 35px;
+        }
+        .registration-box {
+          font-size: 16px;
+          margin-top: 28px;
+          padding-bottom: 40px;
+        }
+        #mobile-submit-btn {
+          display: block;
+        }
+        #fg-mobile-submit-btn {
+          display: block;
+        }
+        #mobile-submit-lg {
+          display: none;
+        }
+        #fg-mobile-submit-lg {
+          display: none;
+        }
+        .social-inner-box {
+          max-width: 88%;
+          height: 41px;
+        }
+        .social-inner-box img {
+          max-width: 23px;
+          max-height: 23px;
+        }
+        .inner-footer {
+          padding: 0 15px;
+        }
+        .institute-box {
+          flex-direction: column;
+        }
+        .organiser {
+          width: 100%;
+        }
+        .co-organiser {
+          width: 100%;
+        }
+        .co-organiser a {
+          width: 43%;
+        }
+        .institute .hkdi-a {
+          margin-right: 8%;
+        }
+        .lead-sponsor {
+          width: 100%;
+        }
+        .in-label {
+          text-align: center;
+          font-size: 16px;
+          margin-bottom: 10px;
+        }
+        .lead-sponsor > .in-label {
+          margin-left: 0px;
+        }
+        .institute {
+          justify-content: center;
+          margin-bottom: 30px;
+        }
+        #poly-U {
+          margin-top: -11px;
+        }
+        .lead-sponsor a {
+          width: 45%;
+        }
+        footer {
+          padding-top: 20px;
+          background-image: url(https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/footer-bg-mobile.jpg);
+        }
+        .disclaimer {
+          margin-top: 0;
+          font-size: 10px;
+        }
+      }
+    </style>
+
+    <script>
+      (function () {
+        $("select").formSelect();
+        // Enable submit button on requirement meet
+        let loaded = false;
+        let password = false;
+        let location = false;
+        let email = false;
+        let selectedLocation = null;
+
+        // change language
+        var lang = "eng";
+        let counter = 0;
+
+        function changeLanguage(language) {
+          console.log("Language: ", language);
+          location = false;
+          lang = language;
+          switch (language) {
+            case "eng":
+              changeToEnglish();
+
+              break;
+            case "tc":
+              changeToTC();
+              break;
+            case "sc":
+              changeToSC();
+              break;
+            default:
+              break;
+          }
+        }
+        const signIn = $(".sign-in");
+        const emailLabel = $("#label-email");
+        const forgotPwdEmailLabel = $("#label-forgot-email");
+        const emailInput = $("input[name='email']");
+        const passwordIndput = $("input[name='passcode']");
+        const passwordLabel = $("#label-password");
+        const fgTitle = $(".forgot-pwd-title");
+        const backToSignIn = $(".back-to-sign-in");
+
+        const locationLabel = $("#label-location");
+        const registrationBox = $(".registration-box");
+        const forgotPwdLabel = $(".forgot-pwd");
+        const submitImg = $("#mobile-submit-lg");
+        const submitImgMobile = $("#mobile-submit-btn");
+        const fgSubmitImg = $("#fg-mobile-submit-lg");
+        const fgSubmitImgMobile = $("#fg-mobile-submit-btn");
+
+        function changeToEnglish() {
+          $(".location-eng-box").show();
+          $(".location-tc-box").hide();
+          $(".location-sc-box").hide();
+          signIn.html("SIGN IN");
+          fgTitle.html("FORGOT PASSWORD");
+          emailLabel.html("Email");
+          passwordLabel.html("Password");
+          locationLabel.html("Streaming Location");
+          forgotPwdLabel.html("Forgot Password?");
+          forgotPwdEmailLabel.html("Email Address");
+          backToSignIn.html("Back to SIGN IN");
+          registrationBox.html(
+            "Haven't registered yet? <a href='#''>Register here.</a>"
+          );
+          submitImg.attr(
+            "src",
+            "https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/submit.png"
+          );
+          submitImgMobile.attr(
+            "src",
+            "https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/submit-mobile-btn.png"
+          );
+          fgSubmitImg.attr(
+            "src",
+            "https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/submit.png"
+          );
+          fgSubmitImgMobile.attr(
+            "src",
+            "https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/submit-mobile-btn.png"
+          );
+          emailInput.attr("placeholder", "(Please enter your email address)");
+          passwordIndput.attr("placeholder", "(Please enter your password)");
+        }
+
+        function changeToTC() {
+          $(".location-eng-box").hide();
+          $(".location-tc-box").show();
+          $(".location-sc-box").hide();
+          signIn.html("登入");
+          fgTitle.html("忘記密碼");
+          emailLabel.html("電郵");
+          passwordLabel.html("密碼");
+          locationLabel.html("串流播放地點");
+          forgotPwdLabel.html("忘記密碼？");
+          forgotPwdEmailLabel.html("電郵");
+          backToSignIn.html("返回登入");
+          registrationBox.html("尚未登記？<a href='#'>按此</a>進行註冊");
+          submitImg.attr(
+            "src",
+            "https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/submit-cn.png"
+          );
+          submitImgMobile.attr(
+            "src",
+            "https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/submit-cn-sm.png"
+          );
+          fgSubmitImg.attr(
+            "src",
+            "https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/submit-cn.png"
+          );
+          fgSubmitImgMobile.attr(
+            "src",
+            "https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/submit-cn-sm.png"
+          );
+          emailInput.attr("placeholder", "（請輸入您的電郵）");
+          passwordIndput.attr("placeholder", "（請輸入您的密碼）");
+        }
+
+        function changeToSC() {
+          $(".location-eng-box").hide();
+          $(".location-tc-box").hide();
+          $(".location-sc-box").show();
+          signIn.html("登入");
+          fgTitle.html("忘记密码");
+          emailLabel.html("电邮");
+          passwordLabel.html("密码");
+          locationLabel.html("串流播放地点");
+          forgotPwdLabel.html("忘记密码？");
+          forgotPwdEmailLabel.html("电邮");
+          backToSignIn.html("返回登录");
+          registrationBox.html("尚未登记？<a href='#'>按此</a>进行注册");
+          submitImg.attr(
+            "src",
+            "https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/submit-cn.png"
+          );
+          submitImgMobile.attr(
+            "src",
+            "https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/submit-cn-sm.png"
+          );
+          fgSubmitImg.attr(
+            "src",
+            "https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/submit-cn.png"
+          );
+          fgSubmitImgMobile.attr(
+            "src",
+            "https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/submit-cn-sm.png"
+          );
+          emailInput.attr("placeholder", "（请输入您的电邮）");
+          passwordIndput.attr("placeholder", "（请输入您的密码）");
+        }
+
+        $(".en").on("click", function (e) {
+          if (counter > 0) {
+            changeLanguage("eng");
+            $(".lang-box div").removeClass("show");
+            $(".lang-box div").removeClass("active");
+            $(this).addClass("active");
+            counter--;
+          } else {
+            $(".lang-box div").addClass("show");
+            counter++;
+          }
+          return;
+        });
+        $(".tc").on("click", function (e) {
+          if (counter > 0) {
+            changeLanguage("tc");
+            $(".lang-box div").removeClass("show");
+            $(".lang-box div").removeClass("active");
+            $(this).addClass("active");
+            counter--;
+          } else {
+            $(".lang-box div").addClass("show");
+            counter++;
+          }
+          return;
+        });
+        $(".sc").on("click", function (e) {
+          if (counter > 0) {
+            changeLanguage("sc");
+            $(".lang-box div").removeClass("show");
+            $(".lang-box div").removeClass("active");
+            $(this).addClass("active");
+            counter--;
+          } else {
+            $(".lang-box div").addClass("show");
+            counter++;
+          }
+          return;
+        });
+
+        // end
+
+        // check if the browser is finished loading
+        $(window).on("load", function () {
+          loaded = true;
+        });
+        $('input[name="passcode"]').on("input", function (e) {
+          let value = e.target.value;
+          console.log(value);
+          if (value) {
+            password = true;
+          } else {
+            password = false;
+          }
+          if (loaded && password && location && email) {
+            $("#submit").attr("disabled", false);
+          } else {
+            $("#submit").attr("disabled", true);
+          }
+        });
+        $("#location-eng").on("change", function (e) {
+          console.log("change");
+          let value = e.target.value;
+          console.log(value);
+          if (value) {
+            location = true;
+            selectedLocation = value;
+          } else {
+            location = false;
+          }
+          if (loaded && password && location && email) {
+            $("#submit").attr("disabled", false);
+          } else {
+            $("#submit").attr("disabled", true);
+          }
+        });
+        $("#location-tc").on("change", function (e) {
+          console.log("change");
+          let value = e.target.value;
+          console.log(value);
+          if (value) {
+            location = true;
+            selectedLocation = value;
+          } else {
+            location = false;
+          }
+          if (loaded && password && location && email) {
+            $("#submit").attr("disabled", false);
+          } else {
+            $("#submit").attr("disabled", true);
+          }
+        });
+        $("#location-sc").on("change", function (e) {
+          console.log("change");
+          let value = e.target.value;
+          console.log(value);
+          if (value) {
+            location = true;
+            selectedLocation = value;
+          } else {
+            location = false;
+          }
+          if (loaded && password && location && email) {
+            $("#submit").attr("disabled", false);
+          } else {
+            $("#submit").attr("disabled", true);
+          }
+        });
+        $('input[name="email"]').on("input", function (e) {
+          let value = e.target.value;
+          console.log(value);
+          if (value) {
+            email = true;
+          } else {
+            email = false;
+          }
+          if (loaded && password && location && email) {
+            $("#submit").attr("disabled", false);
+          } else {
+            $("#submit").attr("disabled", true);
+          }
+        });
+        // end
+
+        // Hide err msg on input
+        $("input[name='email']").on("input", function () {
+          $(".failed-login").hide();
+        });
+        $("input[name='passcode']").on("input", function () {
+          $(".failed-login").hide();
+        });
+        $("select[name='location']").on("change", function () {
+          $("#location-err").hide();
+        });
+
+        // Form Submit
+        $("#enrollment-form").on("submit", async function (e) {
+          e.preventDefault();
+          let email = $("input[name='email']").val();
+          let location = selectedLocation;
+          let password = $("input[name='passcode'").val();
+          console.log("location:", location);
+          let hasError = false;
+          if (email === "") {
+            $("#email-err").show();
+            hasError = true;
+          }
+          if (password === "") {
+            $("#pwd-err").show();
+            hasError = true;
+          }
+          if (location === null) {
+            $("#location-err").show();
+            hasError = true;
+          }
+          if (hasError) return;
+
+          // let event_id = "kodw2020";
+          // let login_data = {
+          //     event_id: event_id,
+          //     usercode: email,
+          //     passcode: password,
+          //     enroll: {
+          //         locatioin: location,
+          //         email: email,
+          //     },
+          // };
+          let event_id = "b8412917-ba17-42f2-9ef3-5142d81669a6";
+          let login_data = {
+            eventId: event_id,
+            credentials: {
+              email: email,
+              passcode: password,
+            },
+          };
+          let login_result = await fetch(
+            "https://web.nova.hk/viewer/api/auth/v1/authenticate",
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(login_data),
+            }
+          );
+          let login_result_json = await login_result.json();
+
+          if (!login_result_json.userInitialProfile) {
+            // throw new error("Invalid Login")
+            if (lang === "eng") {
+              $(".failed-login").html(
+                "The login information you entered was incorrect. Please try to re-enter your email address and password. Please try again."
+              );
+            } else if (lang === "tc") {
+              $(".failed-login").html(
+                "您輸入的登錄資料不正確。 請重新輸入您的電郵和密碼。"
+              );
+            } else if (lang === "sc") {
+              $(".failed-login").html(
+                "您输入的登录资料不正确。请重新输入您的电邮和密码。"
+              );
+            }
+            $(".failed-login").show();
+            return;
+          } else {
+            // console.log("Jwt: ", login_result_json.novacast_sso_token);
+            // let sso_join_url = login_result_json.sso_join_url;
+
+            //  kodw, two sso url, china and not china
+            let sso_join_url;
+            let sso_token;
+            if (location === "China") {
+              // sso_join_url =
+              //     "https://novacast.nova.hk/events/kodw2020_china/join/sso";
+              sso_join_url = login_result_json.sso_cn.ssoJoinURL;
+              sso_token = login_result_json.sso_cn.ssoToken;
+            } else {
+              // sso_join_url =
+              //     "https://novacast.nova.hk/events/kodw2020/join/sso";
+              sso_join_url = login_result_json.sso_non_cn.ssoJoinURL;
+              sso_token = login_result_json.sso_non_cn.ssoToken;
+            }
+
+            let sso_join_data = {
+              sso_token: sso_token,
+              "enroll[email]": email,
+              "enroll[location]": location,
+            };
+            //  add default account info into enroll and pass to Novacast
+            if (login_result_json.userInitialProfile) {
+              let account_info = login_result_json.userInitialProfile;
+              let account_info_keys = Object.keys(account_info);
+              account_info_keys.forEach((key) => {
+                sso_join_data[`enroll[${key}]`] = account_info[key];
+              });
+            }
+            post(sso_join_url, sso_join_data);
+          }
+        });
+        //  =============================
+        //  sso join, forward to Novacast
+        //  =============================
+        function post(path, params, method = "post") {
+          const form = document.createElement("form");
+          form.method = method;
+          form.action = path;
+
+          for (const key in params) {
+            if (params.hasOwnProperty(key)) {
+              const hiddenField = document.createElement("input");
+              hiddenField.type = "hidden";
+              hiddenField.name = key;
+              hiddenField.value = params[key];
+
+              form.appendChild(hiddenField);
+            }
+          }
+
+          document.body.appendChild(form);
+          form.submit();
+        }
+
+        // forgot password
+        $(".back-to-sign-in").on("click", function (e) {
+          $("#enrollment-form").show();
+          $("#forgot-pwd-form").hide();
+          $(".sign-in").show();
+          $(".forgot-pwd-title").hide();
+          $(".registration-box").show();
+          $(".loader").hide();
+          $("#forgot-email").val("");
+        });
+        $("#forgot-pwd-form").on("submit", function (e) {
+          e.preventDefault();
+          forgetPassword();
+        });
+
+        $(".forgot-pwd").on("click", function () {
+          $("#enrollment-form").hide();
+          $("#forgot-pwd-form").show();
+          $(".sign-in").hide();
+          $(".forgot-pwd-title").show();
+          $(".registration-box").hide();
+        });
+
+        async function forgetPassword() {
+          const email = document.getElementById("forgot-email").value;
+          $(".loader").show();
+          $("#ok").hide();
+          if (!email) {
+            alert("please provide your email\n請提供您的電子郵件");
+            $(".loader").hide();
+            $("#ok").show();
+            return;
+          }
+
+          let eventId = "b8412917-ba17-42f2-9ef3-5142d81669a6";
+          let data = {
+            eventId: eventId,
+            email: email,
+          };
+          let result = await fetch(
+            "https://web.nova.hk/viewer/api/auth/v1/forgotPassword",
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(data),
+            }
+          );
+
+          if (result.ok) {
+            email.val = "";
+            $("#forgot-pwd-err").css("color", "#2eef2e");
+            if (lang === "eng") {
+              $("#forgot-pwd-err")
+                .html("Please check your email for the password")
+                .show();
+            } else if (lang === "tc") {
+              $("#forgot-pwd-err").html("請檢查您的電郵以獲取密碼").show();
+            } else if (lang === "sc") {
+              $("#forgot-pwd-err").html("请检查您的电邮以获取密码").show();
+            }
+          } else {
+            let message = await result.text();
+            $("#forgot-pwd-err").css("color", "rgb(247, 122, 122)");
+            if (lang === "eng") {
+              $("#forgot-pwd-err")
+                .html(
+                  "Couldn’t find your registration record, please register <a href='https://novacast.nova.hk/events/kodw2020/registration' target='_blank'>here</a>."
+                )
+                .show();
+            } else if (lang === "tc") {
+              $("#forgot-pwd-err")
+                .html(
+                  "我們未能查核您的登記記錄，請按此 <a href='https://novacast.nova.hk/events/kodw2020/registration' target='_blank'>登記</a>。"
+                )
+                .show();
+            } else if (lang === "sc") {
+              $("#forgot-pwd-err")
+                .html(
+                  "我们未能查核您的登记记录，请按此 <a href='https://novacast.nova.hk/events/kodw2020/registration' target='_blank'>登记</a>。"
+                )
+                .show();
+            }
+          }
+
+          $("#ok").show();
+          $(".loader").hide();
+        }
+      })(); // end of document ready
+    </script>
+  </body>
+</html>
