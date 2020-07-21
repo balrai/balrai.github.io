@@ -1152,13 +1152,13 @@
           /></a>
         </div>
         <div class="wechat">
-          <a href="https://www.kodw.org/en" target="_blank">
-            <img
-              src="https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/wechat.png"
-              alt=""
-              id="wechat"
-            />
-          </a>
+          <!-- <a href="https://www.kodw.org/en" target="_blank"> -->
+          <img
+            src="https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/wechat.png"
+            alt=""
+            id="wechat"
+          />
+          <!-- </a> -->
         </div>
       </div>
     </div>
@@ -1166,7 +1166,7 @@
       <div class="inner-footer">
         <div class="institute-box">
           <div class="organiser">
-            <div class="in-label">ORGANISER</div>
+            <div class="in-label" id="organiser">ORGANISER</div>
             <div class="institute">
               <div class="org-box">
                 <a
@@ -1190,7 +1190,7 @@
             </div>
           </div>
           <div class="co-organiser">
-            <div class="in-label">CO-ORGANISERS</div>
+            <div class="in-label" id="co-organiser">CO-ORGANISERS</div>
             <div class="institute">
               <a
                 href="http://www.hkdi.edu.hk/en/"
@@ -1216,7 +1216,7 @@
             </div>
           </div>
           <div class="lead-sponsor">
-            <div class="in-label">LEAD SPONSOR</div>
+            <div class="in-label" id="lead-sponsor">LEAD SPONSOR</div>
             <div class="institute">
               <a href="https://www.createhk.gov.hk/" target="_blank">
                 <img
@@ -1239,10 +1239,43 @@
           Create Hong Kong, the CreateSmart Initiative Secretariat or the
           CreateSmart Initiative Vetting Committee.
         </div>
+        <div class="links">
+          <div class="left-link">USEFUL LINKS</div>
+          <div class="right-links">
+            <a
+              href="https://www.kodw.org/en/article/terms-of-use/"
+              target="_blank"
+              id="terms"
+            >
+              Terms of Use
+            </a>
+            <a
+              href="https://www.kodw.org/en/article/privacy-policy-statement/"
+              target="_blank"
+              id="privacy"
+            >
+              Privacy Policy
+            </a>
+            <a
+              href="https://www.kodw.org/en/article/hkdc-copyright-policy-statement/"
+              target="_blank"
+              id="copyright"
+            >
+              Copyright Policy
+            </a>
+          </div>
+        </div>
+        <div class="links">
+          <div class="rights">ALL RIGHTS RESERVED.</div>
+          <div class="copyright en">
+            HONG KONG DESIGN CENTRE © 2020 - KNOWLEDGE OF DESIGN WEEK
+          </div>
+          <div class="copyright tc">主辦單位保留更改節目流程之最終權利。?</div>
+          <div class="copyright sc">主办单位保留更改节目流程之最终权利。</div>
+        </div>
       </div>
     </footer>
 
-    <div class="result">Please check your email for the PIN.</div>
     <style>
       * {
         box-sizing: border-box;
@@ -1265,20 +1298,6 @@
 
       #fg-mobile-submit-btn {
         display: none;
-      }
-
-      .result {
-        position: fixed;
-        right: -600px;
-        top: 100px;
-        background-color: rgb(67, 181, 226);
-        color: #fff;
-        font-size: 16px;
-        font-weight: 300;
-        padding: 10px 20px;
-        border-top-left-radius: 10px;
-        transition: right 2s;
-        z-index: 999999;
       }
 
       #kodw-logo {
@@ -1653,7 +1672,7 @@
       footer {
         background-image: url(https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/footer-bg-lg.jpg);
         background-size: cover;
-        padding: 43px 0 70px;
+        padding: 43px 0 50px;
       }
 
       .inner-footer {
@@ -1735,7 +1754,29 @@
       .disclaimer {
         font-size: 12px;
         font-weight: 300;
-        margin-top: 25px;
+      }
+      .links {
+        display: flex;
+        margin-top: 28px;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 12px;
+        letter-spacing: 0.02px;
+      }
+
+      .left-link {
+        font-size: 14px;
+        margin-right: 40px;
+      }
+      .right-links a {
+        color: #fff;
+        font-size: 12px;
+        margin-right: 20px;
+        text-decoration: none;
+      }
+      .copyright.tc,
+      .copyright.sc {
+        display: none;
       }
 
       .err {
@@ -1982,7 +2023,18 @@
           padding-bottom: 40px;
         }
         footer {
-          padding: 22px 0 50px;
+          padding: 22px 0 35px;
+        }
+        .links {
+          font-size: 10px;
+          margin-top: 20px;
+        }
+
+        .left-link {
+          font-size: 12px;
+        }
+        .right-links a {
+          font-size: 10px;
         }
       }
 
@@ -2191,6 +2243,19 @@
           margin-top: 0;
           font-size: 10px;
         }
+        .links {
+          font-size: 10px;
+          flex-direction: column;
+        }
+
+        .left-link {
+          font-size: 16px;
+          margin-right: 0;
+          margin-bottom: 5px;
+        }
+        .right-links a {
+          font-size: 12px;
+        }
       }
     </style>
 
@@ -2246,6 +2311,33 @@
         const fgSubmitImgMobile = $("#fg-mobile-submit-btn");
 
         function changeToEnglish() {
+          $("#organiser").html("ORGANISER");
+          $("#co-organiser").html("CO-ORGANISERS");
+          $("#lead-sponsor").html("LEAD SPONSOR");
+          $(".disclaimer").html(
+            "Disclaimer: The Government of the Hong Kong Special Administrative Region provides funding support to the project only, and does not otherwise take part in the project. Any opinions, findings, conclusions or recommendations expressed in these materials/events (or by members of the project team) are those of the project organizers only and do not reflect the views of the Government of the Hong Kong Special Administrative Region, the Communications and Creative Industries Branch of the Commerce and Economic Development Bureau, Create Hong Kong, the CreateSmart Initiative Secretariat or the CreateSmart Initiative Vetting Committee."
+          );
+          $(".left-link").html("USEFUL LINKS");
+          $("#terms")
+            .attr("href", "https://www.kodw.org/en/article/terms-of-use/")
+            .html("Terms of Use");
+          $("#privacy")
+            .attr(
+              "href",
+              "https://www.kodw.org/en/article/privacy-policy-statement/"
+            )
+            .html("Privacy Policy");
+          $("#copyright")
+            .attr(
+              "href",
+              "https://www.kodw.org/en/article/hkdc-copyright-policy-statement/"
+            )
+            .html("Copyright Policy");
+          $(".rights").show();
+          $(".copyright.en").show();
+          $(".copyright.tc").hide();
+          $(".copyright.sc").hide();
+
           $(".location-eng-box").show();
           $(".location-tc-box").hide();
           $(".location-sc-box").hide();
@@ -2281,6 +2373,33 @@
         }
 
         function changeToTC() {
+          $("#organiser").html("主辦機構");
+          $("#co-organiser").html("協辦機構");
+          $("#lead-sponsor").html("主要贊助機構");
+          $(".disclaimer").html(
+            "免責聲明:香港特別行政區政府僅為本項目提供資助，除此之外並無參與項目。在本刊物／活動內（或由項目小組成員）表達的任何意見、研究成果、結論或建議，均不代表香港特別行政區政府、商務及經濟發展局通訊及創意產業科、創意香港、創意智優計劃秘書處或創意智優計劃審核委員會的觀點。"
+          );
+          $(".left-link").html("相關連結");
+          $("#terms")
+            .attr("href", "https://www.kodw.org/tc/article/terms-of-use/")
+            .html("使用條款");
+          $("#privacy")
+            .attr(
+              "href",
+              "https://www.kodw.org/tc/article/privacy-policy-statement/"
+            )
+            .html("私隱政策");
+          $("#copyright")
+            .attr(
+              "href",
+              "https://www.kodw.org/tc/article/hkdc-copyright-policy-statement/"
+            )
+            .html("香港設計中心版權聲明");
+          $(".copyright.en").hide();
+          $(".copyright.tc").show();
+          $(".copyright.sc").hide();
+          $(".rights").hide();
+
           $(".location-eng-box").hide();
           $(".location-tc-box").show();
           $(".location-sc-box").hide();
@@ -2314,6 +2433,21 @@
         }
 
         function changeToSC() {
+          $("#organiser").html("主办机构");
+          $("#co-organiser").html("协办机构");
+          $("#lead-sponsor").html("主要赞助机构");
+          $(".disclaimer").html(
+            "免责声明:香港特别行政区政府仅为本项目提供资助，除此之外并无参与项目。在本刊物／活动内（或由项目小组成员）表达的任何意见、研究成果、结论或建议，均不代表香港特别行政区政府、商务及经济发展局通讯及创意产业科、创意香港、创意智优计划秘书处或创意智优计划审核委员会的观点。"
+          );
+          $(".left-link").html("相关连结");
+          $("#terms").attr("href", "").html("使用条款");
+          $("#privacy").attr("href", "").html("私隐政策");
+          $("#copyright").attr("href", "").html("香港设计中心版权声明");
+          $(".copyright.en").hide();
+          $(".copyright.tc").hide();
+          $(".copyright.sc").show();
+          $(".rights").hide();
+
           $(".location-eng-box").hide();
           $(".location-tc-box").hide();
           $(".location-sc-box").show();
