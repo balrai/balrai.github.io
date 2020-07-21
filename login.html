@@ -2210,6 +2210,7 @@
 
         function changeLanguage(language) {
           console.log("Language: ", language);
+          window.localStorage.setItem("kodw-language", language);
           location = false;
           lang = language;
           switch (language) {
@@ -2583,11 +2584,16 @@
               sso_join_url = login_result_json.sso_non_cn.ssoJoinURL;
               sso_token = login_result_json.sso_non_cn.ssoToken;
             }
+            let name =
+              login_result_json.userInitialProfile.firstName +
+              " " +
+              login_result_json.userInitialProfile.lastName;
 
             let sso_join_data = {
               sso_token: sso_token,
               "enroll[email]": email,
               "enroll[location]": location,
+              "enroll[name]": name,
             };
             //  add default account info into enroll and pass to Novacast
             if (login_result_json.userInitialProfile) {
