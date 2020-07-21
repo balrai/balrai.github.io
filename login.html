@@ -25,34 +25,50 @@
   <body>
     <div class="top">
       <header>
-        <img
-          src="https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/logo-kodw.png"
-          alt=""
-          id="kodw-logo"
-        />
-        <div class="head-middle">
+        <div class="head-kodw">
           <img
-            src="https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/login-title.png"
+            src="https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/kodw-logo.png"
             alt=""
+            id="kodw-logo"
           />
+        </div>
+
+        <div class="head-middle">
+          <div>
+            <img
+              src="https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/designing-digital-logo.png"
+              alt=""
+            />
+            <div class="covid">in post Covid-19</div>
+          </div>
         </div>
         <div class="head-right">
-          <img
-            src="https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/logo-event.png"
-            alt=""
-            id="event-logo"
-          />
-          <img
-            src="https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/logo-hkdc.png"
-            alt=""
-            id="hkdc-logo"
-          />
-        </div>
-        <div class="lang-wrapper">
-          <div class="lang-box">
-            <div class="en active" id="en">EN</div>
-            <div class="tc" id="tc">繁</div>
-            <div class="sc" id="sc">简</div>
+          <div class="head-right-top">
+            <div class="head-date">
+              <div class="aug">AUG</div>
+              <div class="aug-day">26-29</div>
+            </div>
+            <img
+              src="https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/hkdi-logo.png"
+              alt=""
+              id="hkdc-logo"
+            />
+          </div>
+          <div class="theme">
+            <div class="green-control">
+              <div class="green-box">Be part of our community</div>
+            </div>
+            <div class="theme-info">
+              FREE Virtual Live Event & <br />
+              Networking Platform
+            </div>
+            <div class="lang-wrapper">
+              <div class="lang-box">
+                <div class="en" id="en">EN</div>
+                <div class="tc active" id="tc">繁</div>
+                <div class="sc" id="sc">简</div>
+              </div>
+            </div>
           </div>
         </div>
       </header>
@@ -1266,16 +1282,66 @@
       }
 
       #kodw-logo {
-        width: 193px;
+        width: 90px;
       }
-
-      #event-logo {
-        width: 150px;
+      .covid {
+        font-size: 42px;
+        font-style: italic;
+        margin-left: 85px;
+        line-height: 1.2;
       }
 
       #hkdc-logo {
         width: 70px;
-        margin-left: 25px;
+        margin-left: 30px;
+      }
+      .aug {
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 1;
+        text-align: center;
+      }
+      .aug-day {
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1;
+      }
+      .green-box {
+        background: #bcec45;
+        color: #3f005c;
+        font-size: 25px;
+        font-weight: 500;
+        width: 408px;
+        margin-left: 40px;
+        padding: 5px 140px 5px 0px;
+        text-align: right;
+        position: relative;
+      }
+      .green-box::before {
+        background-color: #bcec45;
+        position: absolute;
+        content: "";
+        -webkit-transform: rotate(114deg);
+        transform: rotate(114deg);
+        -webkit-transform-origin: 3% 0;
+        transform-origin: 34% 0;
+        left: -26px;
+        top: 31px;
+
+        width: 100px;
+        height: 20px;
+        background: inherit;
+      }
+      .green-control {
+        overflow: hidden;
+      }
+      .theme-info {
+        font-size: 24px;
+        font-weight: 400;
+        padding: 17px 140px 0px 40px;
+        text-align: right;
+        line-height: 1.4;
       }
 
       #poly-U {
@@ -1284,14 +1350,16 @@
 
       .head-middle {
         position: absolute;
-        width: calc(100% - 80px);
+        width: calc(100% - 60px);
 
-        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         top: 22px;
       }
 
-      .head-middle > img {
-        width: 506px;
+      .head-middle > div > img {
+        width: 315px;
       }
 
       .location-tc-box,
@@ -1301,7 +1369,14 @@
 
       .head-right {
         display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+      .head-right-top {
+        display: flex;
         align-items: flex-start;
+        margin-right: 38px;
       }
 
       .content-box {
@@ -1313,12 +1388,12 @@
 
       header {
         position: relative;
-        padding: 24px 40px;
+        padding: 25px 0px 25px 30px;
         display: flex;
-        align-items: flex-start;
+        align-items: stretch;
         justify-content: space-between;
         height: 300px;
-        background-image: url(./images/xl-banner-login.jpg);
+        background-image: url(https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/login-background-1920.png);
         background-size: cover;
         background-position: right;
       }
@@ -1374,8 +1449,8 @@
 
       .lang-wrapper {
         position: absolute;
-        right: 75px;
-        bottom: 60px;
+        right: 65px;
+        bottom: 56px;
         display: flex;
         align-items: center;
       }
@@ -1779,7 +1854,7 @@
           max-width: 1228px;
         }
         header {
-          background-image: url(./images/lg-banner-login.jpg);
+          background-image: url(https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/login-background-1440.png);
           background-size: cover;
         }
       }
@@ -1788,8 +1863,52 @@
         .inner-footer {
           padding: 0 50px;
         }
+        .head-middle {
+          width: calc(100% - 34px);
+        }
         .head-middle > img {
           width: 500px;
+        }
+        #kodw-logo {
+          width: 62px;
+        }
+        header {
+          padding: 18px 0 18px 22px;
+          height: 200px;
+        }
+        .head-middle > div > img {
+          width: 217px;
+        }
+        #hkdc-logo {
+          width: 46px;
+          margin-left: 23px;
+        }
+        .aug {
+          font-size: 28px;
+        }
+        .aug-day {
+          font-size: 21px;
+        }
+        .covid {
+          font-size: 30px;
+        }
+        .head-right-top {
+          margin-right: 20px;
+        }
+        .green-box {
+          padding: 5px 90px 5px 0px;
+          float: right;
+          width: 290px;
+          font-size: 18px;
+        }
+        .theme-info {
+          font-size: 17px;
+          padding: 12px 90px 0px 0px;
+        }
+        .lang-wrapper {
+          right: 34px;
+          bottom: 22px;
+          font-size: 18px;
         }
       }
 
@@ -1801,18 +1920,16 @@
 
       @media only screen and (max-width: 1024px) {
         header {
-          background-image: url(./images/ipad-banner-login.jpg);
+          background-image: url(https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/login-background-ipad.png);
           background-size: cover;
-          padding: 18px 17px;
+
           height: 200px;
         }
         .lang-wrapper {
-          right: 50px;
-          bottom: 40px;
+          right: 34px;
+          bottom: 34px;
         }
-        .lang-box div {
-          font-size: 20px;
-        }
+
         .social-inner-box img {
           max-width: 32px;
           max-height: 32px;
@@ -1820,29 +1937,12 @@
         .lang-box {
           height: 20px;
         }
-        .head-middle > img {
-          width: 331px;
-        }
-        .head-middle {
-          top: 17px;
-          width: calc(100% - 34px);
-        }
+
         .social-inner-box {
           max-width: 714px;
           height: 60px;
         }
-        #kodw-logo {
-          width: 136px;
-        }
-        #event-logo {
-          width: 106px;
-        }
-        #hkdc-logo {
-          width: 63px;
-        }
-        #title-logo {
-          width: 600px;
-        }
+
         .submit-box {
           margin-top: 37px;
         }
@@ -1889,6 +1989,8 @@
       @media only screen and (max-width: 768px) {
         .head-middle {
           top: 20px;
+          padding-left: 165px;
+          justify-content: flex-start;
         }
         .head-middle > img {
           width: 300px;
@@ -1908,23 +2010,41 @@
           width: 80%;
         }
         #kodw-logo {
-          width: 82px;
+          width: 30px;
+        }
+        .show {
+          background: #fff;
+          color: #390658 !important;
+          padding: 5px;
+        }
+        .lang-box div {
+          margin-bottom: 0;
+        }
+
+        .head-middle > div > img {
+          width: 146px;
         }
         #event-logo {
           width: 66px;
         }
         #hkdc-logo {
-          width: 30px;
-          margin-left: 18px;
+          width: 22px;
+          margin-left: 11px;
+        }
+        .aug {
+          font-size: 13px;
+        }
+        .aug-day {
+          font-size: 10px;
         }
         header {
-          background-image: url(./images/mobile-banner-login.jpg);
+          background-image: url(https://nova-web-static.s3.ap-southeast-1.amazonaws.com/event/kodw2020/login-background-mobile.png);
           height: 160px;
-          padding: 10px;
+          padding: 10px 0 14px 13px;
         }
         .lang-wrapper {
           right: 25px;
-          bottom: 16px;
+          bottom: 90px;
         }
         .lang-box {
           height: 18px;
@@ -1937,11 +2057,37 @@
         }
         .head-middle {
           width: calc(100% - 20px);
-          top: 46px;
+          top: 30px;
+          padding-left: 50px;
         }
-        .head-middle > img {
-          width: 213px;
+        .covid {
+          font-size: 20px;
+          margin-left: 40px;
         }
+        .head-right-top {
+          margin-right: 10px;
+        }
+        .green-box {
+          font-size: 12px;
+          padding: 3px 10px 3px 0px;
+          width: 135px;
+        }
+        .green-box::before {
+          -webkit-transform: rotate(109deg);
+          transform: rotate(109deg);
+          -webkit-transform-origin: 3% 0;
+          transform-origin: 34% 0;
+          left: -35px;
+          top: 31px;
+          width: 100px;
+          height: 10px;
+          background: inherit;
+        }
+        .theme-info {
+          font-size: 12px;
+          padding: 8px 10px 0px 0px;
+        }
+
         #title-logo {
           width: 320px;
         }
@@ -2199,7 +2345,30 @@
             changeLanguage("eng");
             $(".lang-box div").removeClass("show");
             $(".lang-box div").removeClass("active");
-            $(this).addClass("active");
+            $("#tc").addClass("active");
+            counter--;
+          } else {
+            $(".lang-box div").addClass("show");
+            if (lang === "tc") {
+              $("#en").css("order", 1);
+              $("#tc").css("order", 3);
+              $("#sc").css("order", 2);
+            } else if (lang === "sc") {
+              $("#en").css("order", 1);
+              $("#tc").css("order", 2);
+              $("#sc").css("order", 3);
+            }
+
+            counter++;
+          }
+          return;
+        });
+        $(".tc").on("click", function (e) {
+          if (counter > 0) {
+            changeLanguage("tc");
+            $(".lang-box div").removeClass("show");
+            $(".lang-box div").removeClass("active");
+            $("#en").addClass("active");
             counter--;
           } else {
             $(".lang-box div").addClass("show");
@@ -2210,28 +2379,12 @@
           }
           return;
         });
-        $(".tc").on("click", function (e) {
-          if (counter > 0) {
-            changeLanguage("tc");
-            $(".lang-box div").removeClass("show");
-            $(".lang-box div").removeClass("active");
-            $(this).addClass("active");
-            counter--;
-          } else {
-            $(".lang-box div").addClass("show");
-            $("#en").css("order", 1);
-            $("#tc").css("order", 3);
-            $("#sc").css("order", 2);
-            counter++;
-          }
-          return;
-        });
         $(".sc").on("click", function (e) {
           if (counter > 0) {
             changeLanguage("sc");
             $(".lang-box div").removeClass("show");
             $(".lang-box div").removeClass("active");
-            $(this).addClass("active");
+            $("#en").addClass("active");
             counter--;
           } else {
             $(".lang-box div").addClass("show");
