@@ -49,9 +49,9 @@
         </div>
         <div class="lang-wrapper">
           <div class="lang-box">
-            <div class="en active">EN</div>
-            <div class="tc">繁</div>
-            <div class="sc">简</div>
+            <div class="en active" id="en">EN</div>
+            <div class="tc" id="tc">繁</div>
+            <div class="sc" id="sc">简</div>
           </div>
         </div>
       </header>
@@ -1325,6 +1325,8 @@
       .lang-box {
         position: relative;
         height: 30px;
+        display: flex;
+        flex-direction: column;
       }
 
       .org-box {
@@ -2200,6 +2202,9 @@
             counter--;
           } else {
             $(".lang-box div").addClass("show");
+            $("#en").css("order", 3);
+            $("#tc").css("order", 1);
+            $("#sc").css("order", 2);
             counter++;
           }
           return;
@@ -2213,6 +2218,9 @@
             counter--;
           } else {
             $(".lang-box div").addClass("show");
+            $("#en").css("order", 1);
+            $("#tc").css("order", 3);
+            $("#sc").css("order", 2);
             counter++;
           }
           return;
@@ -2226,6 +2234,9 @@
             counter--;
           } else {
             $(".lang-box div").addClass("show");
+            $("#en").css("order", 1);
+            $("#tc").css("order", 2);
+            $("#sc").css("order", 3);
             counter++;
           }
           return;
